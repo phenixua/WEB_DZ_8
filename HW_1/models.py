@@ -1,7 +1,10 @@
 from bson import json_util
 from mongoengine import connect, Document, StringField, ReferenceField, ListField, CASCADE
 
-connect(db="homework", host="mongodb://localhost:27017")
+# connect(db="homework", host="mongodb://localhost:27017")
+
+connect(db="homework",
+        host="mongodb+srv://phenix:567432@clusterphenix.wy97tt3.mongodb.net/?retryWrites=true&w=majority")
 
 
 class Author(Document):
