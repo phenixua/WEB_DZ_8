@@ -1,11 +1,8 @@
 import json
-import os
-import sys
 import time
 from mongoengine import connect
 import pika
 
-# Підключення до MongoDB
 connect(db='email_contacts', host='mongodb://localhost:27017/email_contacts')
 
 from models import Contact  # Імпорт моделі
